@@ -3,6 +3,7 @@ import {
   FaHome,
   FaFileAlt,
   FaMicrophone,
+  FaHistory,
   FaSignOutAlt
 } from "react-icons/fa";
 
@@ -40,15 +41,12 @@ function Sidebar() {
           Mock Interview
         </Link>
         <Link
-          to="/interview"
+          to="/resume-history"
           className="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-800"
         >
+        <FaHistory />
+        <span>Resume History</span>
         </Link>
-        <Link
-  to="/resume-history"
->
-  Resume History
-</Link>
 
       </div>
     </div>

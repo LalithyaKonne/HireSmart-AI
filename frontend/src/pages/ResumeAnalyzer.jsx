@@ -112,6 +112,13 @@ function ResumeAnalyzer() {
                 <option value="Fresher">
   Fresher / Placement Preparation
 </option>
+<option value="DSA">
+    DSA Focused Student
+  </option>
+
+  <option value="HR">
+    HR Round Preparation
+  </option>
               </select>
             </div>
 
@@ -177,6 +184,17 @@ function ResumeAnalyzer() {
                 <h3 className="text-center mt-4 font-bold">
                   ATS Score
                 </h3>
+                <p className="text-center mt-2">
+
+                {
+                  result.atsScore >= 80
+                  ? "🟢 Excellent ATS"
+                  : result.atsScore >= 60
+                  ? "🟡 Good ATS"
+                  : "🔴 Needs Improvement"
+                }
+
+                </p>
 
               </div>
 
@@ -191,19 +209,27 @@ function ResumeAnalyzer() {
                 </p>
 
               </div>
+              <div className="bg-slate-900 p-6 rounded-2xl">
+
+  <h3 className="text-gray-400">
+    Placement Readiness
+  </h3>
+
+  <p className="text-4xl font-bold text-purple-400 mt-3">
+    {result.placementReadiness}%
+  </p>
+
+</div>
 
               <div className="bg-slate-900 p-6 rounded-2xl">
 
                 <h3 className="text-gray-400">
-                  Resume Quality
+                  Resume Strength
                 </h3>
 
                 <p className="text-3xl font-bold text-blue-400 mt-3">
-                  {getQuality(
-                    result.atsScore
-                  )}
+                    {result.resumeStrength}
                 </p>
-
               </div>
 
               <div className="bg-slate-900 p-6 rounded-2xl">
@@ -313,27 +339,27 @@ function ResumeAnalyzer() {
                 AI Suggestions
               </h2>
 
-<div className="bg-slate-900 p-6 rounded-2xl mt-6">
+              <div className="bg-slate-900 p-6 rounded-2xl mt-6">
 
-  <h2 className="text-2xl font-bold mb-4">
-    🎯 Placement Tips
-  </h2>
+                <h2 className="text-2xl font-bold mb-4">
+                  🎯 Placement Tips
+                </h2>
 
-  <ul className="space-y-3">
+              <ul className="space-y-3">
 
-    <li>✓ Practice DSA daily</li>
+                <li>✓ Practice DSA daily</li>
 
-    <li>✓ Build 2-3 projects</li>
+                <li>✓ Build 2-3 projects</li>
 
-    <li>✓ Keep GitHub updated</li>
+                <li>✓ Keep GitHub updated</li>
 
-    <li>✓ Improve communication skills</li>
+                <li>✓ Improve communication skills</li>
 
-    <li>✓ Prepare HR answers</li>
+                <li>✓ Prepare HR answers</li>
 
-  </ul>
+              </ul>
 
-</div>
+              </div>
               <ul className="space-y-3">
 
                 {result.suggestions.map(
@@ -391,29 +417,6 @@ function ResumeAnalyzer() {
                     )}
                   </p>
                 </div>
-
-                <div className="bg-slate-900 p-6 rounded-2xl">
-
-  <h3 className="text-gray-400">
-    Placement Readiness
-  </h3>
-
-  <p className="text-4xl font-bold text-purple-400 mt-3">
-    {result.placementReadiness}%
-  </p>
-
-</div>
-<p className="text-center mt-2">
-
-{
-result.atsScore >= 80
-? "🟢 Excellent ATS"
-: result.atsScore >= 60
-? "🟡 Good ATS"
-: "🔴 Needs Improvement"
-}
-
-</p>
 
               </div>
 

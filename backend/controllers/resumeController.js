@@ -111,6 +111,35 @@ async (req, res) => {
       ];
 
     }
+    else if(role === "DSA") {
+
+ requiredSkills = [
+   "dsa",
+   "array",
+   "linked list",
+   "stack",
+   "queue",
+   "tree",
+   "graph",
+   "sorting",
+   "searching",
+   "recursion"
+ ];
+
+}
+else if(role === "HR") {
+
+ requiredSkills = [
+   "communication",
+   "leadership",
+   "teamwork",
+   "presentation",
+   "problem solving",
+   "project",
+   "internship"
+ ];
+
+}
 
     else {
 

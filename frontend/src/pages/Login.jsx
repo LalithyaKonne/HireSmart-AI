@@ -39,25 +39,42 @@ function Login() {
 
       navigate("/dashboard");
     } catch (error) {
-      alert("Login Failed");
-    }
+
+  console.log("LOGIN ERROR:", error);
+
+  console.log(
+    "SERVER RESPONSE:",
+    error.response?.data
+  );
+
+  alert(
+    error.response?.data?.message ||
+    error.message ||
+    "Login Failed"
+  );
+
+}
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-950">
       <form
         onSubmit={handleSubmit}
-        className="bg-slate-900 p-8 rounded-xl w-96"
+        className="bg-slate-900 p-8 rounded-2xl w-96 shadow-2xl border border-slate-700"
       >
-        <h1 className="text-3xl font-bold mb-6">
-          HireSmart AI
-        </h1>
+        <h1 className="text-4xl font-bold text-center mb-2 text-white">
+  HireSmart AI
+</h1>
+
+<p className="text-center text-gray-400 mb-6">
+  AI Resume Analyzer & Mock Interview Platform
+</p>
 
         <input
           type="email"
           name="email"
           placeholder="Email"
-          className="w-full p-3 mb-4 rounded bg-slate-800"
+          className="w-full p-3 mb-4 rounded bg-slate-800 text-white placeholder-gray-400 border border-slate-700"
           onChange={handleChange}
         />
 
@@ -69,9 +86,10 @@ function Login() {
           onChange={handleChange}
         />
 
-        <button className="w-full bg-blue-600 p-3 rounded">
+        <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 p-3 rounded-lg font-semibold hover:scale-105 transition">
           Login
         </button>
+        
 
         <p className="mt-4">
           New User?
