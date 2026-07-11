@@ -205,40 +205,6 @@ dashboardData?.latestInterview?.score || 0
 
           </div>
 
-          {/* AI Career Tips */}
-
-          <div className="bg-slate-900 p-6 rounded-2xl shadow-lg">
-
-            <h2 className="text-2xl font-bold mb-4">
-              🤖 AI Career Tips
-            </h2>
-
-            <ul className="space-y-3 text-gray-300">
-
-              <li>
-                ✅ Add Full Stack Projects
-              </li>
-
-              <li>
-                ✅ Improve DSA Skills
-              </li>
-
-              <li>
-                ✅ Practice Mock Interviews
-              </li>
-
-              <li>
-                ✅ Add GitHub Portfolio
-              </li>
-
-              <li>
-                ✅ Learn System Design Basics
-              </li>
-
-            </ul>
-
-          </div>
-
         </div>
 
       </div>
