@@ -18,22 +18,6 @@ https://hiresmart-ai-backend.onrender.com
 
 ---
 
-## 📸 Screenshots
-
-| Login | Dashboard |
-|--------|-----------|
-| <img width="482" height="503" alt="image" src="https://github.com/user-attachments/assets/c359c73f-dcf0-4d49-b892-9353edfeb6f9" />
-|<img width="1883" height="867" alt="image" src="https://github.com/user-attachments/assets/0f81af8f-4eae-4e8c-a3a6-08a5e0ef1223" />
-|
-
-| Resume Analyzer | Mock Interview |
-|-----------------|----------------|
-| ![](images/resume.png) | ![](images/interview.png) |
-
-| Resume History |
-|----------------|
-| ![](images/history.png) |
-
 ## ✨ Features
 
 ### 🔐 Authentication
